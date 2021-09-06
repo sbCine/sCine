@@ -1,0 +1,58 @@
+
+#about {
+    min-height: 100vh;
+}
+
+.fondo-about {
+    min-height: 100vh;
+    background-image: url(../media/img/fondo/fondo1_J.jpg);
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.about-title {
+    color: hsl(0, 0%, 11%);
+    font-family: Rejova;
+}
+
+.about-sub-title {
+    font-size: 30px;
+    color: hsl(0, 0%, 11%);
+    font-family: JosefinSans-Bold;
+}
+
+.p-about {
+    width: 50%;
+    height: 50%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: hsl(0, 0%, 11%);
+    font-family: JosefinSans-Bold;
+}
+
+.about-boton {
+    margin-top: 10px;
+	color: hsl(0, 0%, 11%);
+	border-radius: 15px;
+}
+
+.about-boton:hover {
+	background: hsl(0, 0%, 11%);
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+
+    .p-about {
+        width: 90%;
+        height: 90%;
+    }
+    
+}

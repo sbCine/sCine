@@ -1,0 +1,46 @@
+
+#carrousel {
+    padding-top: 20px;
+    min-height: 100vh;
+}
+
+.fondo-carrousel {
+    min-height: 100vh;
+    background-image: url(../media/img/fondo/fondo0_J.jpg);
+}
+
+.carrousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.750);
+}
+
+.carrousel-title {
+    color: white;
+    font-family: Omniface;
+    position: relative;
+    top: 15px;
+}
+
+.carrousel-sub-title {
+    font-size: 25px;
+    color: white;
+    font-family: JosefinSans-Bold;
+}
+
+.boton-go {
+    margin-top: 10px;
+	color: white;
+	border: 1px solid;
+	border-radius: 25px;
+}
+
+.boton-go:hover {
+	background: white;
+    color: black;
+    border: 1px solid white;
+}
+

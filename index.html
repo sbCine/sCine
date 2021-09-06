@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/carrousel.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/specialty.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <script src="https://kit.fontawesome.com/d97d108d55.js" crossorigin="anonymous"></script>
+        <title>SiembraCine</title>
+    </head>
+    <body id="body">
+        <header>
+            <div class="icon_menu" id="btn_menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+            </div>
+            <div class="icon_name_page">
+                <h4>SiembraCine</h4>
+            </div>
+        </header>
+        <div class="menu_side" id="menu_side">
+            <div class="name_page">
+                <i class="fas fa-film"></i>
+                <h4>SiembraCine</h4>
+            </div>
+            <div class="options_menu">
+                <a href="#" class="selected">
+                    <div class="option">
+                        <i class="fas fa-home" title="Inicio"></i>
+                        <h4>Inicio</h4>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="option">
+                        <i class="fas fa-address-card" title="Nosotros"></i>
+                        <h4>Nosotros</h4>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="option">
+                        <i class="fas fa-briefcase" title="Especialidad"></i>
+                        <h4>Especialidad</h4>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="option">
+                        <i class="fas fa-video" title="Filmografia"></i>
+                        <h4>Filmografia</h4>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="option">
+                        <i class="fas fa-id-card-alt" title="Contactenos"></i>
+                        <h4>Contactenos</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container-button">
+            <input type="checkbox" id="btn-mas">
+            <div class="redes">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fa fa-telegram"></a>
+            </div>
+            <div class="btn-mas">
+                <label for="btn-mas" class="fa fa-plus"></label>
+            </div>
+        </div>
+        <main>
+            <section id="carrousel">
+                <div class="fondo-carrousel">
+                    <div class="carrousel-container">
+                        <h1 class="title carrousel-title">SiembraCine</h1>
+                        <h2 class="carrousel-sub-title">Aun sin Slogan</h2>
+                        <a class="button boton-go" href="#about">GO!</a>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="fondo-about">
+                    <div class="about-container">
+                        <h2 class="title about-title">Nosotros</h2>
+                        <div class="line"></div>
+                        <h3 class="about-sub-title">Contenido</h3>
+                        <p class="p-about">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odit quas reprehenderit quaerat mollitia assumenda amet, tempora distinctio nemo in voluptates architecto accusamus consectetur doloremque perspiciatis aliquid alias sit? Illum!
+                        </p>
+                        <a class="button about-boton" href="#">Saber Mas</a>
+                    </div>
+                </div>
+            </section>
+            <section id="specialty">
+                <div class="fondo-specialty">
+                    <div class="specialty-container">
+                        <h2 class="title specialty-title">Somos Especialistas en...</h2>
+                    </div>
+                    <div class="info-specialty-container">
+                        <h2 class="title info-specialty-title">Nuestra Especialidad</h2>
+                        <div class="line"></div>
+                        <p class="p-specialty">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odit quas reprehenderit quaerat mollitia assumenda amet, tempora distinctio nemo in voluptates architecto accusamus consectetur doloremque perspiciatis aliquid alias sit? Illum!
+                        </p>
+                        <a class="button specialty-boton" href="#">Saber Mas</a>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery">
+                <div class="fondo-gallery">
+                    <div class="gallery-container">
+                        <h2 class="title gallery-title">Filmografia</h2>
+                        <div class="line"></div>
+                        <div class="container-post">
+                            <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+                            <input type="radio" id="LMETRAJE" name="categories" value="LMETRAJE">
+                            <input type="radio" id="CMETRAJE" name="categories" value="CMETRAJE">
+                            <div class="container-category">
+                                <label for="TODOS">TODOS</label>
+                                <label for="LMETRAJE">LARGOMETRAJE</label>
+                                <label for="CMETRAJE">CORTOMETRAJE</label>
+                            </div>
+                            <div class="posts">
+                                <div class="post" data-category="LMETRAJE">
+                                    <figure class="ctn-img">
+                                        <img src="media/img/vistas/vista-0_G.gif" alt="">
+                                        <div class="capa">
+                                            <h3>Las Colmenas</h3>
+                                            <div class="line"></div>
+                                            <div class="acr">
+                                                <a href="#" class="fas fa-link"></a>
+                                                <a href="https://www.youtube.com/watch?v=ZU5P-H-gQwU&ab" target="_blank" class="fab fa-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="post" data-category="CMETRAJE">
+                                    <figure class="ctn-img">
+                                        <img src="media/img/articulos/exlogo_P.png" alt="">
+                                        <div class="capa">
+                                            <h3>Modo Pana</h3>
+                                            <div class="line"></div>
+                                            <div class="acr">
+                                                <a href="#" class="fas fa-link"></a>
+                                                <a href="#" target="_blank" class="fab fa-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="post" data-category="LMETRAJE">
+                                    <figure class="ctn-img">
+                                        <img src="media/img/articulos/newlogo_W.webp" alt="">
+                                        <div class="capa">
+                                            <h3>Modo Pana</h3>
+                                            <div class="line"></div>
+                                            <div class="acr">
+                                                <a href="#" class="fas fa-link"></a>
+                                                <a href="#" target="_blank" class="fab fa-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="post" data-category="CMETRAJE">
+                                    <figure class="ctn-img">
+                                        <img src="media/img/articulos/exlogo_P.png" alt="">
+                                        <div class="capa">
+                                            <h3>Modo Pana</h3>
+                                            <div class="line"></div>
+                                            <div class="acr">
+                                                <a href="#" class="fas fa-link"></a>
+                                                <a href="#" target="_blank" class="fab fa-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="post" data-category="LMETRAJE">
+                                    <figure class="ctn-img">
+                                        <img src="media/img/articulos/newlogo_W.webp" alt="">
+                                        <div class="capa">
+                                            <h3>Modo Pana</h3>
+                                            <div class="line"></div>
+                                            <div class="acr">
+                                                <a href="#" class="fas fa-link"></a>
+                                                <a href="#" target="_blank" class="fab fa-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="post" data-category="CMETRAJE">
+                                    <figure class="ctn-img">
+                                        <img src="media/img/articulos/exlogo_P.png" alt="">
+                                        <div class="capa">
+                                            <h3>Modo Pana</h3>
+                                            <div class="line"></div>
+                                            <div class="acr">
+                                                <a href="#" class="fas fa-link"></a>
+                                                <a href="#" target="_blank" class="fab fa-youtube"></a>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="fondo-contact">
+                    <div class="contact-container">
+                        <h2 class="title contact-title">Contactenos</h2>
+                        <div class="line"></div>
+                        <p class="p-contact">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At odit quas reprehenderit quaerat mollitia assumenda amet, tempora distinctio nemo in voluptates architecto accusamus consectetur doloremque perspiciatis aliquid alias sit? Illum!
+                        </p>
+                        <div class="a-container">
+                            <div class="ac-container">
+                                <a href="#" class="fas fa-envelope"></a>
+                                <p class="p-ac-contact">
+                                    info@example.com
+                                </p>
+                            </div>
+                            <div class="ac-container">
+                                <a href="#" class="fas fa-phone"></a>
+                                <p class="p-ac-contact">
+                                    +51 983569825
+                                </p>
+                            </div>
+                            <div class="ac-container">
+                                <a href="#" target="_blank" class="fas fa-map-marker-alt"></a>
+                                <p class="p-ac-contact">
+                                    Jr. De Mentira De la Calle de mi Casa
+                                </p>
+                            </div>
+                        </div>
+                        <a class="button contact-boton" href="#">Mas Info</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Productora</h4>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#about">Nosotros</a></li>
+                            <li><a href="#specialty">Especialidad</a></li>
+                            <li><a href="#gallery">Filmografia</a></li>
+                            <li><a href="#contact">Contactenos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Otros</h4>
+                        <ul>
+                            <li><a href="extakateam.ga">Extaka</a></li>
+                            <li><a href="#">Pronto</a></li>
+                            <li><a href="#">Pronto</a></li>
+                            <li><a href="#">Pronto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes</h4>
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fa fa-telegram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">&copy;2021, SiembraCine</span>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>

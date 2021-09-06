@@ -1,0 +1,109 @@
+
+#contact {
+    min-height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.contact-title {
+    padding: 0;
+    color: hsl(0, 0%, 11%);
+    font-family: Rejova;
+}
+
+.p-contact {
+    width: 45%;
+    height: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+    color: hsl(0, 0%, 11%);
+    font-family: JosefinSans-Bold;
+}
+
+.contact-boton {
+	color: hsl(0, 0%, 11%);
+	border-radius: 15px;
+}
+
+.contact-boton:hover {
+	background: hsl(0, 0%, 11%);
+    color: white;
+}
+
+.a-container  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.a-container .ac-container {
+    text-align: center;
+}
+
+.a-container .ac-container a {
+	height: 70px;
+	width: 70px;
+    margin-top: 20px;
+	line-height: 70px;
+	border-radius: 50%;
+    font-size: 25px;
+    text-decoration: none;
+	color: black;
+	transition: all 0.5s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-container a:hover {
+	color: white;
+	background-color: hsl(0, 0%, 11%);
+}
+
+.p-ac-contact {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 11%);
+    font-family: JosefinSans-Bold;
+    text-align: center; 
+}
+
+@media screen and (max-width: 1200px){
+
+    .p-ac-contact {
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .contact-title {
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .p-contact {
+        display: none;
+    }
+
+    .a-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .a-container .ac-container a {
+        margin-top: 0px;
+    }
+}

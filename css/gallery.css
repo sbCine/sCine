@@ -1,0 +1,242 @@
+
+
+#gallery {
+    min-height: 100vh;
+}
+
+.fondo-gallery {
+    min-height: 100vh;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 11%);
+}
+
+.gallery-title {
+	margin-top: 200px;
+    color: white;
+    font-family: Rejova;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.container-category {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-category label {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    padding-left: 30px;
+	padding-right: 30px;
+    margin: 10px;
+    font-size: 20px;
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+	font-family: Montserrat-Medium;
+	transition: all 500ms ease;
+}
+
+.container-category label:hover {
+    color: white;
+    background-color: hsl(0, 0%, 11%);
+    transition: all 500ms ease;
+}
+
+/*Post - Publicaciones*/
+
+.container-post {
+    max-width: 1200px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.posts {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+	transition: all 500ms ease;
+}
+
+.posts .post {
+    overflow: hidden;
+}
+
+.post .ctn-img {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post .ctn-img:hover {
+    background: linear-gradient(to bottom, hsl(0, 0%, 11%), white);
+    transition: all 750ms ease;
+}
+
+.post .ctn-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+	border-radius: 10px;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+}
+
+.post .ctn-img video {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+	border-radius: 10px;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+}
+
+.post .ctn-img .capa {
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Rejova;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.post .ctn-img:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.post .ctn-img .capa h3 {
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.post .ctn-img:hover > .capa h3 {
+    margin-top: 0;
+}
+
+.post .ctn-img h3 {
+    font-size: 25px;
+	transition: all 500ms ease;
+    font-family: NaturaPlay-Bold;
+}
+
+.post .ctn-img .capa a {
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.post .ctn-img .capa a:hover {
+	color: hsl(0, 0%, 11%);
+	background-color: #ffffff;
+}
+
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+[value="LMETRAJE"]:checked ~ .posts .post:not([data-category~="LMETRAJE"]),
+[value="CMETRAJE"]:checked ~ .posts .post:not([data-category~="CMETRAJE"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="LMETRAJE"]:checked ~ .container-category [for="LMETRAJE"],
+[value="CMETRAJE"]:checked ~ .container-category [for="CMETRAJE"]{
+    background: lightcoral;
+    color: #fff;
+    transition: all 750ms ease;
+}
+
+@media screen and (max-width: 1200px){
+
+    .gallery-title {
+        margin-top: 100px;
+    }
+
+    .posts{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+
+    .post .ctn-img:hover {
+        background: hsl(0, 0%, 11%);
+        transition: all 750ms ease;
+    }
+
+    .post .ctn-img img{
+        width: 100%;
+        height: 100%;
+		object-fit: cover;
+		padding: 10px;
+		border-radius: 20px;
+		margin: auto;
+
+	}
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .gallery-title {
+        margin-top: 100px;
+    }
+
+    .container-category label{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+	.post .ctn-img img{
+        width: 100%;
+        height: 100%;
+		object-fit: cover;
+		padding: 10px;
+		border-radius: 35px;
+		margin: auto;
+	}
+
+    .post .ctn-img h3 {
+        font-size: 40px;
+        transition: all 500ms ease;
+        font-family: NaturaPlay-Bold;
+    }
+
+}

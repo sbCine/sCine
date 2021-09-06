@@ -1,0 +1,54 @@
+
+/*
+    Fuentes
+*/
+
+@font-face {
+    font-family: AnonymousPro-Bold;
+    src: url(../lib/fonts/AnonymousPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: Omniface;
+    src: url(../lib/fonts/Omniface.otf);
+}
+
+@font-face {
+    font-family: JosefinSans-Light;
+    src: url(../lib/fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: JosefinSans-Regular;
+    src: url(../lib/fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: JosefinSans-Bold;
+    src: url(../lib/fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NaturaPlay-Bold;
+    src: url(../lib/fonts/NaturaPlay-Bold.ttf);
+}
+
+@font-face {
+    font-family: NaturaPlay-Regular;
+    src: url(../lib/fonts/NaturaPlay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rejova;
+    src: url(../lib/fonts/Rejova.otf);
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../lib/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../lib/fonts/Montserrat-Medium.ttf);
+}
