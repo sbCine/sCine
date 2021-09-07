@@ -20,13 +20,14 @@
 
 .carrousel-title {
     color: white;
+    font-size: 100px;
     font-family: Omniface;
     position: relative;
-    top: 15px;
+    top: 50px;
 }
 
 .carrousel-sub-title {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     font-family: JosefinSans-Bold;
 }
@@ -44,3 +45,11 @@
     border: 1px solid white;
 }
 
+@media screen and (max-width: 768px){
+
+    .carrousel-title {
+        top: 20px;
+        font-size: 60px;
+    }
+    
+}

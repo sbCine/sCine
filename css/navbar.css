@@ -13,6 +13,7 @@ header {
     top: 0;
     z-index: 200;
     font-family: Omniface;
+    
 }
 
 .icon_menu {
@@ -131,6 +132,7 @@ header {
 
 a.selected {
     color: lightcoral;
+    transition: all 500ms ease;
 }
 
 .selected:before {
@@ -141,6 +143,7 @@ a.selected {
     position: absolute;
     top: 10%;
     left: -30px;
+    transition: all 500ms ease;
 }
 
 .body_move {
@@ -154,6 +157,10 @@ a.selected {
 
 
 @media screen and (max-width: 768px){
+
+    header {
+        display: flex;
+    }
 
     .icon_name_page {
         display: block;
