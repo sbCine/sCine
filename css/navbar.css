@@ -155,6 +155,37 @@ a.selected {
 }
 
 
+.gtraslate {
+    height: 50%;
+    background-color: hsl(0, 0%, 11%);
+    margin-left: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.gtbox {
+    margin-top: 4px;
+}
+
+.gtraslate .gtbox #google_translate_element {
+    float:right;
+    text-align:right;
+    display:block
+}
+
+.goog-te-banner-frame {
+    display: none;
+}
+
+.goog-logo-link {
+   display:none !important;
+} 
+
+.goog-te-gadget{
+   color: transparent !important;
+}
+
+
 
 @media screen and (max-width: 768px){
 

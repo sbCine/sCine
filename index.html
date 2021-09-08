@@ -25,6 +25,11 @@
             <div class="icon_name_page">
                 <h4>SiembraCine</h4>
             </div>
+            <div class="gtraslate">
+                <div class="gtbox">
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
         </header>
         <div class="menu_side" id="menu_side">
             <div class="name_page" id="menu_side_b">
@@ -222,19 +227,19 @@
                         </p>
                         <div class="a-container">
                             <div class="ac-container">
-                                <a href="#" class="fas fa-envelope"></a>
+                                <a href="mailto:extakateam@gmail.com" class="fas fa-envelope"></a>
                                 <p class="p-ac-contact">
                                     info@example.com
                                 </p>
                             </div>
                             <div class="ac-container">
-                                <a href="#" class="fas fa-phone"></a>
+                                <a href="https://wa.me/51983569825/?text=Hola,%20quisiera contactarlos." target="_blank" class="fas fa-phone"></a>
                                 <p class="p-ac-contact">
                                     +51 983569825
                                 </p>
                             </div>
                             <div class="ac-container">
-                                <a href="#" target="_blank" class="fas fa-map-marker-alt"></a>
+                                <a href="https://www.google.com.pe/maps?hl=es-419&authuser=0" target="_blank" class="fas fa-map-marker-alt"></a>
                                 <p class="p-ac-contact">
                                     Jr. De Mentira De la Calle de mi Casa
                                 </p>
@@ -260,10 +265,12 @@
                     </div>
                     <div class="footer-col">
                         <h4>Soporte</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Feedback</a></li>
-                        </ul>
+                        <form action="https://formsubmit.co/extakateam@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input class="name" type="text" name="name" placeholder="Nombre(s)" required><br>
+                            <input class="email" type="email" name="email" placeholder="Email" required><br>
+                            <button class="send" type="submit">Enviar</button>
+                       </form>
                     </div>
                     <div class="footer-col">
                         <h4>Otros</h4>
@@ -289,5 +296,7 @@
         </footer>
         <script src="js/index.js"></script>
         <script src="js/selected.js"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="js/gtranslate.js"></script>
     </body>
 </html>
