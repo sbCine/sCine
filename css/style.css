@@ -42,7 +42,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .line {
-    background-color: lightcoral;
+    background-color: lightgreen;
     width: 50px;
     height: 5px;
     text-align: center;

@@ -43,7 +43,7 @@ ul {
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: lightcoral;
+	background-color: lightgreen;
 	height: 2px;
 	box-sizing: border-box;
 	width: 60px;
@@ -116,7 +116,7 @@ ul {
     color: hsl(0, 0%, 11%);
 }
 
-.copyright {
+.copyright-container {
 	display: flex;
 	color: white;
 	background-color: hsl(0, 0%, 11%);
@@ -127,6 +127,18 @@ ul {
 	bottom: -70px;
 	font-size: 15px;
 	font-family: AnonymousPro-Bold;
+}
+
+.copyright-container .extaka {
+	margin-left: 10px;
+	color: lightcoral;
+	text-decoration: none;
+	transition: all 0.5s
+}
+
+.copyright-container .extaka:hover {
+	color: white;
+	text-decoration: underline;
 }
 
 @media(max-width: 574px){

@@ -58,7 +58,7 @@ header {
 }
 
 .menu_side:hover{
-    color: lightcoral;
+    color: lightgreen;
 }
 
 .menu_side::-webkit-scrollbar {
@@ -106,7 +106,7 @@ header {
 }
 
 .options_menu a:hover{
-    color: lightcoral;
+    color: lightgreen;
 }
 
 .options_menu .option{
@@ -131,7 +131,7 @@ header {
 }
 
 a.selected {
-    color: lightcoral;
+    color: lightgreen;
     transition: all 500ms ease;
 }
 
@@ -139,7 +139,7 @@ a.selected {
     content: '';
     width: 3px;
     height: 80%;
-    background: lightcoral;
+    background: lightgreen;
     position: absolute;
     top: 10%;
     left: -30px;

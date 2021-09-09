@@ -176,8 +176,8 @@ input[type="radio"] {
 [value="TODOS"]:checked ~ .container-category [for="TODOS"],
 [value="LMETRAJE"]:checked ~ .container-category [for="LMETRAJE"],
 [value="CMETRAJE"]:checked ~ .container-category [for="CMETRAJE"]{
-    background: lightcoral;
-    color: #fff;
+    background: lightgreen;
+    color: hsl(0, 0%, 11%);
     transition: all 750ms ease;
 }
 
