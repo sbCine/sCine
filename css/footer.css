@@ -155,13 +155,23 @@ ul {
     	margin-bottom: 30px;
 		padding: 0 40px;
 	}
+
+	.copyright-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.copyright-container .extaka {
+		margin-left: 0px;
+		margin-top: 5px;
+	}
 }
 
 @media only screen and (min-width:768px) and (max-width:1250px) {
 
 	.footer-col{
 		padding: 0 40px;
-	 }
-	
+	}
+
 }
 
